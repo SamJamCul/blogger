@@ -8,8 +8,6 @@ class TagsController < ApplicationController
     @tag = Tag.find(params[:id])
     @tag.destroy
 
-    flash.notice = "Tag '#{@Tag.name}' Eradicated!"
-
     redirect_to tags_path
   end
 
